@@ -269,7 +269,7 @@
         <main class="row">
             <div class="row">
                 <div class="col-4">
-                    <div class="card mb-4 rounded-3 shadow-sm  text-center">
+                    <div class="card mb-4 rounded-3 shadow-sm text-center">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
                         </div>
@@ -286,21 +286,60 @@
                     </div>
                 </div>
                 <div class="col-8">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Имя</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                   aria-describedby="emailHelp">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-4">
+                                    <label for="exampleInputEmail1" class="form-label">Имя</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Email</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Отправить</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </main>
+        <div class="card">
+            <p class="h2 text-center">FAQ </p>
+            <div class="card-body text-center">
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#answer1" role="button"
+                       aria-expanded="false" aria-controls="answer1">
+                        Как купить?
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#answer2" role="button"
+                       aria-expanded="false" aria-controls="answer2">
+                        Как доставить?
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#answer3" role="button"
+                       aria-expanded="false" aria-controls="answer3">
+                        Какая гарантия?
+                    </a>
+                </p>
+                <div class="collapse" id="answer1">
+                    <div class="card card-body">
+                        Купить товар возможно оплатив переводом через СБП
+                    </div>
+                </div>
+                <div class="collapse" id="answer2">
+                    <div class="card card-body">
+                        Доставка осуществляется почтой до почтового отделения или курьером по указанному Вами адресу
+                    </div>
+                </div>
+                <div class="collapse" id="answer3">
+                    <div class="card card-body">
+                        На любой товар предоставляется гарантия в 1 год
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
