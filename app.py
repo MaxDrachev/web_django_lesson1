@@ -6,13 +6,12 @@ serverPort = 8080  # Порт для доступа по сети
 
 class MyServer(BaseHTTPRequestHandler):
     
-    filename = "web.html"
+    filename = "web_contacts.html"
 
     def get_web_content(self):
-      """метод распаковки созданного html файла"""
         with open(self.filename, "r", encoding="utf-8") as file:
-            web_cont = file.read()
-            return web_cont
+          web_cont = file.read()
+          return web_cont
 
     def do_GET(self):
         """ Метод для обработки входящих GET-запросов """
